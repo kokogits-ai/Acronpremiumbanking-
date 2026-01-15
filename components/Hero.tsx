@@ -3,6 +3,8 @@ import React from 'react';
 import { Lock, Shield, Globe } from 'lucide-react';
 
 const Hero: React.FC = () => {
+  const targetUrl = "https://acron-premiumbank.vercel.app/";
+
   return (
     <section className="relative h-[90vh] flex items-center justify-center overflow-hidden bg-[#0a0f1c]">
       {/* Background Image/Overlay */}
@@ -42,12 +44,18 @@ const Hero: React.FC = () => {
         
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-reveal-subtext">
-          <button className="w-full sm:w-auto px-10 py-4 bg-white text-[#0f172a] font-bold rounded-sm hover:bg-[#b59a5d] hover:text-white transition-all duration-300 shadow-xl shadow-black/20">
+          <a 
+            href={targetUrl}
+            className="w-full sm:w-auto px-10 py-4 bg-white text-[#0f172a] font-bold rounded-sm hover:bg-[#b59a5d] hover:text-white transition-all duration-300 shadow-xl shadow-black/20 text-center"
+          >
             Access Your Account
-          </button>
-          <button className="w-full sm:w-auto px-10 py-4 bg-transparent border border-white/20 text-white font-bold rounded-sm hover:bg-white hover:text-[#0f172a] transition-all duration-300 backdrop-blur-sm">
+          </a>
+          <a 
+            href={targetUrl}
+            className="w-full sm:w-auto px-10 py-4 bg-transparent border border-white/20 text-white font-bold rounded-sm hover:bg-white hover:text-[#0f172a] transition-all duration-300 backdrop-blur-sm text-center"
+          >
             Our Services
-          </button>
+          </a>
         </div>
 
         {/* Value Props */}

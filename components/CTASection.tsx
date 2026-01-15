@@ -3,6 +3,8 @@ import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
 const CTASection: React.FC = () => {
+  const targetUrl = "https://acron-premiumbank.vercel.app/";
+
   return (
     <section className="relative py-24 overflow-hidden">
       {/* Background decoration */}
@@ -18,15 +20,18 @@ const CTASection: React.FC = () => {
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
           <a 
-            href="#/login" 
+            href={targetUrl}
             className="group w-full sm:w-auto px-10 py-5 bg-[#0f172a] text-white font-bold rounded-sm hover:bg-slate-800 transition-all duration-300 flex items-center justify-center space-x-3 shadow-lg shadow-slate-900/10"
           >
             <span>Continue to Login</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </a>
-          <button className="text-[#0f172a] font-semibold hover:underline underline-offset-4">
+          <a 
+            href={targetUrl}
+            className="text-[#0f172a] font-semibold hover:underline underline-offset-4"
+          >
             New Client Registration
-          </button>
+          </a>
         </div>
         
         <p className="mt-8 text-xs text-slate-400 font-medium uppercase tracking-widest">
