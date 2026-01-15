@@ -3,7 +3,7 @@ import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
 const CTASection: React.FC = () => {
-  const targetUrl = "https://acron-premiumbank.vercel.app/";
+  const targetUrl = "https://acronbanking.vercel.app/";
 
   return (
     <section className="relative py-24 overflow-hidden">

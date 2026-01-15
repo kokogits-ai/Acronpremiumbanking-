@@ -1,9 +1,10 @@
+
 import React from 'react';
 import { ShieldCheck, Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
-  const targetUrl = "https://acron-premiumbank.vercel.app/";
+  const targetUrl = "https://acronbanking.vercel.app/";
 
   return (
     <footer className="bg-slate-50 border-t border-slate-200 pt-16 pb-8">
@@ -69,7 +70,6 @@ const Footer: React.FC = () => {
             <div className="text-xs text-slate-400">
               © {currentYear} Acron Bank AG. All rights reserved.
             </div>
-            {/* Disclaimer removed as requested */}
           </div>
         </div>
       </div>

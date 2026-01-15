@@ -8,7 +8,7 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
   const [isOpen, setIsOpen] = React.useState(false);
-  const targetUrl = "https://acron-premiumbank.vercel.app/";
+  const targetUrl = "https://acronbanking.vercel.app/";
 
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${

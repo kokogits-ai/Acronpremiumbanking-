@@ -3,7 +3,7 @@ import React from 'react';
 import { Lock, Shield, Globe } from 'lucide-react';
 
 const Hero: React.FC = () => {
-  const targetUrl = "https://acron-premiumbank.vercel.app/";
+  const targetUrl = "https://acronbanking.vercel.app/";
 
   return (
     <section className="relative h-[90vh] flex items-center justify-center overflow-hidden bg-[#0a0f1c]">
