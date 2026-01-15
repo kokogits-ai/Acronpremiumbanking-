@@ -1,9 +1,9 @@
-
 import React from 'react';
 import { ShieldCheck, Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
+  const targetUrl = "https://acron-premiumbank.vercel.app/";
 
   return (
     <footer className="bg-slate-50 border-t border-slate-200 pt-16 pb-8">
@@ -26,10 +26,10 @@ const Footer: React.FC = () => {
           <div className="flex flex-col space-y-4">
             <h4 className="font-bold text-slate-900 text-sm uppercase tracking-widest">Navigation</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-slate-500 text-sm hover:text-[#b59a5d] transition-colors">About Acron</a></li>
-              <li><a href="#" className="text-slate-500 text-sm hover:text-[#b59a5d] transition-colors">Private Services</a></li>
-              <li><a href="#" className="text-slate-500 text-sm hover:text-[#b59a5d] transition-colors">Security Protocol</a></li>
-              <li><a href="#" className="text-slate-500 text-sm hover:text-[#b59a5d] transition-colors">Institutional Access</a></li>
+              <li><a href={targetUrl} className="text-slate-500 text-sm hover:text-[#b59a5d] transition-colors">About Acron</a></li>
+              <li><a href={targetUrl} className="text-slate-500 text-sm hover:text-[#b59a5d] transition-colors">Private Services</a></li>
+              <li><a href={targetUrl} className="text-slate-500 text-sm hover:text-[#b59a5d] transition-colors">Security Protocol</a></li>
+              <li><a href={targetUrl} className="text-slate-500 text-sm hover:text-[#b59a5d] transition-colors">Institutional Access</a></li>
             </ul>
           </div>
 
@@ -37,10 +37,10 @@ const Footer: React.FC = () => {
           <div className="flex flex-col space-y-4">
             <h4 className="font-bold text-slate-900 text-sm uppercase tracking-widest">Legal</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-slate-500 text-sm hover:text-[#b59a5d] transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="text-slate-500 text-sm hover:text-[#b59a5d] transition-colors">Terms & Conditions</a></li>
-              <li><a href="#" className="text-slate-500 text-sm hover:text-[#b59a5d] transition-colors">Cookie Policy</a></li>
-              <li><a href="#" className="text-slate-500 text-sm hover:text-[#b59a5d] transition-colors">Compliance Statements</a></li>
+              <li><a href={targetUrl} className="text-slate-500 text-sm hover:text-[#b59a5d] transition-colors">Privacy Policy</a></li>
+              <li><a href={targetUrl} className="text-slate-500 text-sm hover:text-[#b59a5d] transition-colors">Terms & Conditions</a></li>
+              <li><a href={targetUrl} className="text-slate-500 text-sm hover:text-[#b59a5d] transition-colors">Cookie Policy</a></li>
+              <li><a href={targetUrl} className="text-slate-500 text-sm hover:text-[#b59a5d] transition-colors">Compliance Statements</a></li>
             </ul>
           </div>
 
